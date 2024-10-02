@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="index.html" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Rellena tu cv</legend>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" name="nombreUsuario" id="nombre" required><br>
+            <label for="apellido">apellido</label><br>
+            <input type="text" name="nombreUsuario" id="apellido" required><br>
+            <label for="contra">Contraseña</label><br>
+            <input type="password" name="pass" id="contra" size="50" maxlength="7"><br>
+            <label for="DNI">DNI</label><br>
+            <input type="text" name="DNI" id="DNI" size="50" maxlength="8"><br>
+            <input type="radio" name="genero" value="fem" id="femenino" checked>
+            <label for="femenino">Femenino</label><br>
+            <input type="radio" name="genero" value="masc" id="masculino">
+            <label for="masculino">Masculino</label> <br>
+            <input type="radio" name="genero" value="otro" id="otro">
+            <label for="otro">Otro</label> <br>
+            <label for="foto">Incluir foto de perfil</label>
+            <input type="file" name="perfil" id="foto"><br>
+            <input type="checkbox" name="recibir" value="si" id="recibir">
+            <label for="recibir">Suscribirme al boletin de novedades</label><br>
+            <input type="submit" name="enviar" value="Enviar datos">
+            <input type="reset" name="borrar" value="Borrar datos">
+        </fieldset>
+
+    </form>
+</body>
+</html>
